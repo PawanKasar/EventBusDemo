@@ -3,4 +3,77 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    //Pawan
+    <color name="backgroundColor">#010C65</color>
+
+    <color name="lightblue">#455e70</color>
+    <color name="dark_background">#455e70</color>
+    <color name="black">#000000</color>
+    <color name="green_500">#009688</color>
+    <color name="light_blue_500">#673ab7</color>
+    <color name="light_green_500">#8bc34a</color>
+    <color name="light_grey_500">#3f51b5</color>
+    <color name="gray_300">#e0e0e0</color>
+    <color name="gray_500">#9e9e9e</color>
+    <color name="grey_600">#757575</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="teal_800">#00695c</color>
+    <color name="teal_900">#004d40</color>
+    <color name="cyan_400">#00e5ff</color>
+    <color name="cyan_500">#00BCD4</color>
+    <color name="cyan_700"> #00b8d4</color>
+
+    <color name="green_5000">#4CAF50</color>
+    <color name="brown_500">#795548</color>
+    <color name="deep_orange_500">#FF5722</color>
+    <color name="teal_500">#009688</color>
+
+    <color name="ligh_green_900">#33691E</color>
+    <color name="deap_orange_500">#DD2C00</color>
+    <color name="blue_grey_900">#1A237E</color>
+    <color name="yellow_orange_500">#FF9800</color>
+
+    <color name="pink_800">#ad1457</color>
+    <color name="green_900">#1B5E20</color>
+    <color name="amber_900">#FF6F00</color>
+    <color name="deep_orange_900">#BF360C</color>
+    <color name="gray_900">#212121</color>
+    <color name="indigo_900">#1A237E</color>
+
+
+    <color name="blue_login_button">#445ae3</color>
+    <color name="border_login">#ced4d6</color>
+    <color name="tabUnselected">#A9A9A9</color>
+    <color name="buttontheme">#144752</color>
+    <color name="lblcolor">#cdebf2</color>
+    <color name="white">#ffff</color>
+    <color name="red">#FF0000</color>
+
+
+
+    <!--Pawan changes-->
+    <color name="background_color">#009688</color>
+    <color name="white_greyish">#EEEEEE</color>
+    <color name="button_selectorcolor">#9E9E9E</color>
+
+
+    //Status bar color
+    <color name="grayStatusColor">#3A5B68</color>
+
+
+    <color name="indicator_1">#55B3C2</color>
+    <color name="indicator_2">#64A4A4</color>
+    <color name="indicator_3">#66D7B9</color>
+    <color name="indicator_4">#FDBC7D</color>
+
+
+    <color name="firstlc">#00B6CF</color>
+    <color name="secondlc">#7626D3</color>
+    <color name="thirdlc">#14C63E</color>
+
+    <color name="firstdc">#009CB1</color>
+    <color name="seconddc">#6520B4</color>
+    <color name="thirddc">#11A935</color>
 </resources>
