@@ -1,5 +1,6 @@
-package com.example.eventbusdemo;
+package com.example.eventbusdemo.Activities;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -8,9 +9,11 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.eventbusdemo.Activities.SecondActivity;
 import com.example.eventbusdemo.AdvanceEventModel.Events;
 import com.example.eventbusdemo.AdvanceEventModel.GlobalBus;
 import com.example.eventbusdemo.Fragments.UserFragment;
+import com.example.eventbusdemo.R;
 
 import org.greenrobot.eventbus.Subscribe;
 
@@ -54,6 +57,19 @@ public class MainActivity extends AppCompatActivity {
                 new Events.ActivityFragmentMessage(String.valueOf(etMessage.getText().toString()));
 
         GlobalBus.getBus().post(activityFragmentMessage);
+    }
+
+    public void showSecondActivity(View view) {
+
+        // Post an Sticky event before starting an activity to show the message,
+        // sent by the MainActivity, in SecondActivity.
+        Events.ActivityActivityMessage activityActivityMessageEvent =
+                new Events.ActivityActivityMessage("Hello Event Bus Demo");
+
+        GlobalBus.getBus().postSticky(activityActivityMessageEvent);
+
+        // Start SecondActivity.
+        startActivity(new Intent(this, SecondActivity.class));
     }
 
     @Subscribe
