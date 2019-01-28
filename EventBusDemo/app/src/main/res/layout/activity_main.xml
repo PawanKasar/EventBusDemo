@@ -14,17 +14,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/white"
-        android:padding="@dimen/dimen_10">
-        <!---->
+        android:padding="@dimen/padding_medium">
 
         <TextView
             android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="MainActivity"
-            android:textStyle="bold"
-            android:layout_marginBottom="@dimen/dimen_10"/>
-        <!---->
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:text="@string/title_main"
+            android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/message"
@@ -37,7 +35,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/message"
-            android:hint="Enter Message"/>
+            android:hint="@string/hint_message"
+            android:inputType="text"/>
 
         <Button
             android:id="@+id/sendMessageToFragment"
@@ -46,7 +45,7 @@
             android:layout_below="@id/activityData"
             android:layout_centerHorizontal="true"
             android:onClick="sendMessageToFragment"
-            android:text="SEND MESSAGE"/>
+            android:text="@string/send_message_fragment"/>
 
     </RelativeLayout>
 
@@ -55,9 +54,38 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/activityLayout"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="@dimen/margin_extra_large"
         android:orientation="vertical">
     </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/secondActivityLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragmentContainer"
+        android:layout_marginTop="@dimen/margin_extra_large"
+        android:background="@android:color/white"
+        android:padding="@dimen/padding_medium">
+
+        <TextView
+            android:id="@+id/stickyTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_large"
+            android:text="@string/title_stickyEvent"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/showSecondActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/stickyTitle"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/padding_large"
+            android:text="@string/show_second_activity"/>
+        <!--android:onClick="showSecondActivity"-->
+
+    </RelativeLayout>
 
 
 
